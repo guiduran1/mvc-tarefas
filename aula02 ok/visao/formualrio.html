@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../libs/css/bootstrap.css">
+    <title>FormMVC</title>
+</head>
+
+<body>
+    <h1 class="text-center">preencha os campos abaixo:</h1>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-8">
+                <form id="form">
+                    <div class="row mt-3">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input name="nome" type="text" class="form-control" id="nome">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="form-group">
+                            <label for="nome">Data de nascimento:</label>
+                            <input name="nascimento" type="date" class="form-control" id="nascimento">
+                        </div>
+                        <div class="row mt-3">
+                            <div class="form-group">
+                                <label for="bebida">Escolha a bebida que deseja beber:</label>
+                                <select name="bebida" class="form-control" id="bebida">
+                                <option value="1">energetico</option>
+                                <option value="2">Whisky</option>
+                                <option value="3">Tequila</option>
+                                <option value="4">Vinho</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <button type="submit" class="btn btn-primary btn-send">Enviar</button>
+                        </div>
+                </form>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5" id="retorno">
+
+            </div>
+        </div>
+
+
+        <script src="../../libs/js/jquery-3.6.0.js"></script>
+        <script src="../../libs/js/bootstrap.js"></script>
+        <script src="../controle/function.js"></script>
+</body>
+
+</html>
